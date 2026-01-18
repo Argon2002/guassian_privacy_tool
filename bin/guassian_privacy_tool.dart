@@ -1,4 +1,4 @@
-import 'package:guassian_privacy_tool/guassian_privacy_tool.dart'
+import 'package:guassian_privacy_tool/gaussian_privacy_tool.dart'
     as guassian_privacy_tool;
 
 void main(List<String> arguments) {

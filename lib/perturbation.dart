@@ -3,13 +3,13 @@ import 'dart:math';
 import 'package:guassian_privacy_tool/gaussian_privacy_tool.dart';
 import 'package:guassian_privacy_tool/stats_calc.dart';
 
-class PerturbResult {
+class PerturbGaussian {
   final List<Map<String, String>> rows;
   final Map<String, double> sigmas;
-  PerturbResult(this.rows, this.sigmas);
+  PerturbGaussian(this.rows, this.sigmas);
 }
 
-PerturbResult perturbResult(
+PerturbGaussian perturbGaussian(
   List<Map<String, String>> rows,
   List<String> numericCols, {
   required double alpha,
@@ -34,5 +34,5 @@ PerturbResult perturbResult(
     out.add(rr);
   }
 
-  return PerturbResult(out, sigmas);
+  return PerturbGaussian(out, sigmas);
 }

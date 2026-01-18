@@ -27,7 +27,7 @@ Future<List<Map<String, String>>> readCsvAsMaps(String csvPath) async {
   return out;
 }
 
-Future<void> writeMapAsCsv(
+Future<void> writeMapsAsCsv(
   String path,
   List<Map<String, String>> rows,
   List<String> headers,
