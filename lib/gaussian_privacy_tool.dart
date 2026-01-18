@@ -3,7 +3,7 @@ import 'dart:math';
 // std => noise ampedance (انحراف معیار - شدت نویز)
 // mean => average ((مرکز توزیع) میانگین)
 
-double guassianGenerator(Random rng, {double mean = 0.0, required double std}) {
+double gaussianGenerator(Random rng, {double mean = 0.0, required double std}) {
   // random generated number between 0 and 1 (not 1)
   final u1 = max(rng.nextDouble(), 1e-12);
   final u2 = rng.nextDouble();
